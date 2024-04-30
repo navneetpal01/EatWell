@@ -23,6 +23,7 @@ fun NavGraph(
     val actions = remember(navController) { MainActions(navController) }
 
     NavHost(
+        modifier = modifier,
         navController = navController,
         startDestination = startDestination
     ) {
