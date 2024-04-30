@@ -3,7 +3,6 @@ package com.example.eatwell.ui.theme
 import androidx.compose.ui.graphics.Color
 
 
-
 // System Green color Light-Normal-Dark
 val LIGHT_GREEN = Color(0xFFe9f6ee)
 val LIGHT_HOVER_GREEN = Color(0xFFdef1e6)
@@ -50,11 +49,6 @@ val NORMAL_ACTIVE_WARNING = Color(0xFFc6a907)
 val DARK_WARNING = Color(0xFFb99e07)
 val DARK_HOVER_WARNING = Color(0xFF947f05)
 val DARK_ACTIVE_WARNING = Color(0xFF6e5e04)
-
-
-
-
-
 
 
 // Will clean this shit soon....
