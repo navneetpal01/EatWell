@@ -18,25 +18,25 @@ fun EatWellApp(
 ) {
 
     EatWellTheme {
+
         val tabs = remember { Tabs.values() }
-    }
-    val navController = rememberNavController()
+        val navController = rememberNavController()
 
-
-    Scaffold(
-        containerColor = NORMAL_NEUTRAL_WHITE
-    ) { paddingValues ->
-        NavGraph(
-            modifier = Modifier
-                .padding(paddingValues),
-            navController = navController,
-            finishActivity = finishActivity
-        )
+        Scaffold(
+            containerColor = NORMAL_NEUTRAL_WHITE
+        ) { paddingValues ->
+            NavGraph(
+                modifier = Modifier
+                    .padding(paddingValues),
+                navController = navController,
+                finishActivity = finishActivity
+            )
+        }
     }
 
 }
 
 @Composable
-fun BottomBar(){
+fun BottomBar() {
 
 }

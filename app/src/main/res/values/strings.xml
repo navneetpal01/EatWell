@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">EatWell</string>
+    <string name="tabs_dashboard">Dashboard</string>
+    <string name="tabs_search">Search</string>
+    <string name="tabs_scan">Scan</string>
+    <string name="tabs_stats">Stats</string>
+    <string name="tabs_more">More</string>
 </resources>

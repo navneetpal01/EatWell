@@ -1,5 +1,6 @@
 package com.example.eatwell.presentation.nvgraph
 
+import androidx.activity.compose.BackHandler
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
@@ -29,7 +30,9 @@ fun NavGraph(
     ) {
 
         composable(Route.OnBoarding.screenName) {
-
+            BackHandler {
+                finishActivity()
+            }
         }
         composable(Route.SignUp.screenName) {
 
@@ -43,7 +46,6 @@ fun NavGraph(
         ) {
             tabs()
         }
-
     }
 
 }

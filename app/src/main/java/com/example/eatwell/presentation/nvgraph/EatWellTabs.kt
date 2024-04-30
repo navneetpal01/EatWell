@@ -10,34 +10,34 @@ import com.example.eatwell.R
 
 fun NavGraphBuilder.tabs() {
 
-    composable(Tabs.DASHBOARD.route){
+    composable(Tabs.DASHBOARD.route) {
 
     }
-    composable(Tabs.SEARCH.route){
+    composable(Tabs.SEARCH.route) {
 
     }
-    composable(Tabs.SCAN.route){
+    composable(Tabs.SCAN.route) {
 
     }
-    composable(Tabs.STATS.route){
+    composable(Tabs.STATS.route) {
 
     }
-    composable(Tabs.MORE.route){
+    composable(Tabs.MORE.route) {
 
     }
 }
 
 
 enum class Tabs(
-    @SuppressLint("SupportAnnotationUsage") @StringRes val title: String,
+    @SuppressLint("SupportAnnotationUsage") @StringRes val title: Int,
     @DrawableRes val icon: Int,
     val route: String
 ) {
-    DASHBOARD(title = "Dashboard", R.drawable.ic_launcher_foreground,TabsDestination.DASHBOARD_ROUTE),
-    SEARCH(title = "Search",R.drawable.ic_launcher_foreground,TabsDestination.SEARCH_ROUTE),
-    SCAN(title = "Scan",R.drawable.ic_launcher_foreground,TabsDestination.SCAN_ROUTE),
-    STATS(title = "Stats",R.drawable.ic_launcher_foreground,TabsDestination.STATS_ROUTE),
-    MORE(title = "More",R.drawable.ic_launcher_foreground,TabsDestination.MORE_ROUTE)
+    DASHBOARD(title = R.string.tabs_dashboard, R.drawable.ic_launcher_foreground, TabsDestination.DASHBOARD_ROUTE),
+    SEARCH(title = R.string.tabs_search, R.drawable.ic_launcher_foreground, TabsDestination.SEARCH_ROUTE),
+    SCAN(title = R.string.tabs_scan, R.drawable.ic_launcher_foreground, TabsDestination.SCAN_ROUTE),
+    STATS(title = R.string.tabs_stats, R.drawable.ic_launcher_foreground, TabsDestination.STATS_ROUTE),
+    MORE(title = R.string.tabs_more, R.drawable.ic_launcher_foreground, TabsDestination.MORE_ROUTE)
 }
 
 
