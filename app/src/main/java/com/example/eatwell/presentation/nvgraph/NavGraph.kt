@@ -11,6 +11,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navigation
+import com.example.eatwell.presentation.onboarding.OnBoardingScreen
 
 
 @Composable
@@ -30,9 +31,7 @@ fun NavGraph(
     ) {
 
         composable(Route.OnBoarding.screenName) {
-            BackHandler {
-                finishActivity()
-            }
+            OnBoardingScreen()
         }
         composable(Route.SignUp.screenName) {
 
