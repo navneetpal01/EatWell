@@ -31,7 +31,11 @@ fun NavGraph(
     ) {
 
         composable(Route.OnBoarding.screenName) {
-            OnBoardingScreen()
+            OnBoardingScreen(
+                onClosedPressed = {
+
+                }
+            )
         }
         composable(Route.SignUp.screenName) {
 
